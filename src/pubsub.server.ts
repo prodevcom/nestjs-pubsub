@@ -22,7 +22,7 @@ import {
 	GCD_TOPIC,
 } from './constants'
 import { GCPubSubOptions } from './interfaces'
-import { PubsubContext } from './contexts'
+import { GCPubSubContext } from './contexts'
 
 export class GCPubSubServer extends Server implements CustomTransportStrategy {
 	protected logger = new Logger(GCPubSubServer.name)
@@ -78,7 +78,7 @@ export class GCPubSubServer extends Server implements CustomTransportStrategy {
 		const packet = this.deserializer.deserialize(rawMessage)
 		// @ts-ignore
 		const pattern = isString(packet.pattern) ? packet.pattern : JSON.stringify(packet.pattern)
-		const context = new PubsubContext([message, pattern])
+		const context = new GCPubSubContext([message, pattern])
 		const correlationId = (packet as IncomingRequest).id
 		// @ts-ignore
 		if (isUndefined(correlationId)) return this.handleEvent(pattern, packet, context)

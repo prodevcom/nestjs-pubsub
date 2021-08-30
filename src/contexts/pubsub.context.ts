@@ -3,7 +3,7 @@ import { BaseRpcContext } from '@nestjs/microservices/ctx-host/base-rpc.context'
 
 type GCPubSubContextArgs = [Message, string]
 
-export class PubsubContext extends BaseRpcContext<GCPubSubContextArgs> {
+export class GCPubSubContext extends BaseRpcContext<GCPubSubContextArgs> {
 	constructor(args: GCPubSubContextArgs) {
 		super(args)
 	}
