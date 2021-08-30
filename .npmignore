@@ -1,7 +1,6 @@
 tsconfig.json
 .circleci/
 node_modules/
-src/
 coverage/
 /index.ts
 package-lock.json
