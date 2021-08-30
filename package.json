@@ -1,6 +1,6 @@
 {
   "name": "@prodevcom/nestjs-pubsub",
-  "version": "1.2",
+  "version": "1.2.0",
   "description": "Pacote para gestão do Pub/Sub utilizando NestJS",
   "main": "dist/index.js",
   "scripts": {
