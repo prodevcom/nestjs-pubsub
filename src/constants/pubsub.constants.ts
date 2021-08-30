@@ -1,0 +1,9 @@
+export const GCD_TOPIC = 'default_topic'
+export const GCD_REPLY_TOPIC = 'default_reply_topic'
+export const GCD_SUBSCRIPTION = 'default_subscription'
+export const GCD_REPLY_SUBSCRIPTION = 'default_reply_subscription'
+export const GCD_PUBLISHER_CONFIG = {}
+export const GCD_SUBSCRIBER_CONFIG = {}
+export const GCD_CLIENT_CONFIG = {}
+export const GCD_NO_ACK = false
+export const GCD_ALREADY_EXISTS = 6

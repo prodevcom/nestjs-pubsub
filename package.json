@@ -1,0 +1,46 @@
+{
+  "name": "@prodevcom/nestjs-pubsub",
+  "version": "1.1.1",
+  "description": "Pacote para gestão do Pub/Sub utilizando NestJS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "format": "prettier --write \"**/*.ts\"",
+    "lint": "eslint 'src/**/*.ts' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodevcom/nestjs-pubsub.git"
+  },
+  "keywords": [
+    "prodevcom",
+    "nestjs",
+    "gcloud-pubsub",
+    "nodejs",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@google-cloud/pubsub": "*",
+    "@nestjs/common": "*",
+    "@nestjs/core": "*",
+    "@nestjs/microservices": "*",
+    "prettier": "^2.3.2",
+    "reflect-metadata": "*",
+    "rxjs": "*",
+    "typescript": "^4.4.2"
+  },
+  "peerDependencies": {
+    "@google-cloud/pubsub": "^2.17.0",
+    "@nestjs/common": "^8.0.6",
+    "@nestjs/core": "^8.0.6",
+    "@nestjs/microservices": "^8.0.6",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.3.0"
+  },
+  "author": "Marcelo Mussi <mussi@prodev.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prodevcom/nestjs-pubsub/issues"
+  },
+  "homepage": "https://github.com/prodevcom/nestjs-pubsub#readme"
+}
